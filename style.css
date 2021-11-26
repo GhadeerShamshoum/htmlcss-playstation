@@ -126,7 +126,42 @@ header{
     display: block;   
 
 }
+.first_game{
+    position: relative;
+}
 
-.photos_under_jumbo{
+.first_game.ms_border::before{
+    content: '';
+    top: -4%;
+    bottom: -4%;
+    height: 110%;
+    border: 3px solid rgb(46, 85, 212);
+}
+
+.photos_under_jumbo,
+.first_game.ms_border::before{
+    border-radius: 16px;
+}
+
+.container_photo{
+    position: relative;
+}
+
+.container_photo::after,
+.container_photo::before{
+    content: '';
+    position: absolute;
     width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.photos_under_jumbo{
+    object-fit: cover;
+    width: 100%;
+}
+.container_photo:hover{
+    transform: translate(0, -10px);
 }
