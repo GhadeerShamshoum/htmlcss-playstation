@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div rows="2" class="container-fluid bg-dark">
+<!-- heeader -->
+    <header class="fixed-top">
+        <div class="container-fluid bg-dark">
             <div class="row d-flex justify-content-end">
                 <div  class="col-3 col-md-2 col-lg-1 ms_sony_logo">
                     <img src="img/sony_logo.svg" alt="">
@@ -30,14 +31,20 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
                  
-                  <li class="nav-item me-5">
-                    <a class="ms_link_nav text-decoration-none ms_text_black ms_nav_list" href="#">
+                  <li class="nav-item dropdown me-5 position-static">
+                    <a class="ms_link_nav  text-decoration-none ms_text_black ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="">Giochi</span>
                         <span class="arrow-nav"><img src="img/chevron-down-solid.svg" alt=""></span>
                         <span class="arrow-hover-nav"><img src="img/chevron-down-solid-hover.svg" alt=""></span>
                     </a>
+                    <ul  class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
                   </li>
                   <li class="nav-item me-5">
                     <a class="ms_link_nav text-decoration-none ms_text_black ms_nav_list" href="#">
@@ -100,7 +107,24 @@
             
             
     </header>
-
+    <section>
+        <div class="container-fluid ms_backgroundPhotoTop">
+            <div class="row">
+                <div class="col-10 jumbo-text-items text-white">
+                    <img class="col-6 jumbo_items" src="img/returnal-hero-banner-logo.png" alt="">
+                    <h1 class="col-6 jumbo_items">Rompi il cerchio</h1>
+                    <h6 class="col-12 jumbo_items">Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclussiva su PS5</h6>
+                    <button class="ms_btn btn-border-pop p-1">Acquista ora</button>
+    
+                </div>
+    
+    
+    
+            </div>
+    
+        </div>
+    </section>
+<!-- main -->
     <main>
 
     </main>

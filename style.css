@@ -3,6 +3,9 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+header{
+    height: 116px;
+}
 .ms_sony_logo{
     padding: 1rem;
     vertical-align: middle;
@@ -34,4 +37,62 @@ body{
 }
 .ms_nav_list:hover .arrow-nav{
     display: none;
+}
+
+main{
+    margin-top: 116px;
+}
+
+.ms_backgroundPhotoTop{
+    background-image: url(img/jumbo-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+}
+
+.jumbo-text-items{
+    position: absolute;
+    top: 41%;
+    left: 7%;
+}
+
+.jumbo_items{
+    padding: 6px 0;
+}
+.ms_btn{
+    background-color: var(--background-color);
+    position: relative;   
+    color: white;  
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: .5em 1em;
+    height: 40px;
+    width: 105px;
+    border-radius: 20px;
+
+    --border-size:2px;
+    --background-color: crimson;   
+
+}
+.btn-border-pop::before{
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    right: 3%;
+    bottom: 8%;
+    z-index: 1;
+    border-radius: 20px;
+    display: none;
+    border: 2px solid white;
+    
+}
+
+.ms_btn.btn-border-pop:hover::before,
+.ms_btn.btn-border-pop:focus::before{
+    display: block;   
+    transition-duration:all 3s linear;
+
 }
