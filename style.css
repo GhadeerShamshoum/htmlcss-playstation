@@ -16,9 +16,7 @@ header{
     width: 100%;
 }
 
-.ms_link_nav{
-    width: 30px;
-}
+
 
 .ms_link_nav img{
     width: 10px;
@@ -30,6 +28,7 @@ header{
 
 .arrow-hover-nav{
     display: none;
+    transform: rotate(180deg);
 }
 
 .ms_nav_list:hover .arrow-hover-nav{
@@ -39,7 +38,7 @@ header{
     display: none;
 }
 
-main{
+.jumbo{
     margin-top: 116px;
 }
 
