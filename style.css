@@ -16,7 +16,9 @@ header{
     width: 100%;
 }
 
-
+.ms_link_nav{
+    margin-bottom: 5px;
+}
 
 .ms_link_nav img{
     width: 10px;
@@ -37,6 +39,42 @@ header{
 .ms_nav_list:hover .arrow-nav{
     display: none;
 }
+
+.list-minu{
+    padding-left: 0;
+    margin-right: 23px;
+}
+.list-minu:hover{
+    color: blue;
+}
+.ms_btn_nav{
+    position: relative;   
+    color: white;  
+    border: none;
+    height: 40px;
+    width: 105px;
+    border-radius: 20px;
+    transition: all .5s linear;
+    --border-size:2px; 
+    background-color: gray;
+}
+
+.btn-border-pop-nav::before{
+    content: '';
+    position: absolute;
+    top: 7%;
+    left: 2%;
+    right: 2%;
+    bottom: 7%;
+    z-index: 1;
+    border-radius: 20px;
+    display: none;
+    border: 2px solid white;
+}
+.ms_btn_nav.btn-border-pop-nav:hover::before{
+    display: block;
+}
+
 
 .jumbo{
     margin-top: 116px;
@@ -60,38 +98,35 @@ header{
     padding: 6px 0;
 }
 .ms_btn{
-    background-color: var(--background-color);
     position: relative;   
     color: white;  
-    outline: none;
-    cursor: pointer;
     border: none;
-    padding: .5em 1em;
     height: 40px;
     width: 105px;
     border-radius: 20px;
-
+    transition: all .5s linear;
     --border-size:2px;
-    --background-color: crimson;   
-
+    background-color: crimson; 
 }
 .btn-border-pop::before{
     content: '';
     position: absolute;
-    top: 8%;
-    left: 3%;
-    right: 3%;
-    bottom: 8%;
+    top: 7%;
+    left: 2%;
+    right: 2%;
+    bottom: 7%;
     z-index: 1;
     border-radius: 20px;
     display: none;
-    border: 2px solid white;
-    
+    border: 2px solid black;
 }
 
-.ms_btn.btn-border-pop:hover::before,
-.ms_btn.btn-border-pop:focus::before{
-    display: block;   
-    transition-duration:all 3s linear;
 
+.ms_btn.btn-border-pop:hover::before{
+    display: block;   
+
+}
+
+.photos_under_jumbo{
+    width: 100%;
 }
