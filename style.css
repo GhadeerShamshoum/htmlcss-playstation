@@ -32,6 +32,10 @@ header{
     display: none;
     transform: rotate(180deg);
 }
+.my_playstation,
+.bi-search{
+    line-height: 40px;
+}
 
 .ms_nav_list:hover .arrow-hover-nav{
     display: inline-block;
@@ -130,16 +134,9 @@ header{
     position: relative;
 }
 
-.first_game.ms_border::before{
-    content: '';
-    top: -4%;
-    bottom: -4%;
-    height: 110%;
-    border: 3px solid rgb(46, 85, 212);
-}
 
 .photos_under_jumbo,
-.first_game.ms_border::before{
+#special_border{
     border-radius: 16px;
 }
 
@@ -151,18 +148,16 @@ header{
     position: relative;
 }
 
-.container_photo::after,
-.container_photo::before{
-    content: '';
+#special_border{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: transform 0.3s ease;
+    left: 4%;
+    top: -4%;
+    right: 4%;
+    bottom: -4%;
+    border: 3px solid rgb(46, 85, 212);
 }
-.photos_under_jumbo{
+
+img{
     object-fit: cover;
     width: 100%;
 }
