@@ -6,6 +6,18 @@ body{
 header{
     height: 116px;
 }
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+/* nav-bar */
 .ms_sony_logo{
     padding: 1rem;
     vertical-align: middle;
@@ -51,6 +63,10 @@ header{
 .list-minu:hover{
     color: blue;
 }
+
+.ms_btn_nav_blue{
+    background-color: rgb(55, 55, 230);
+}
 .ms_btn_nav{
     position: relative;   
     color: white;  
@@ -63,8 +79,9 @@ header{
     background-color: gray;
 }
 
-.btn-border-pop-nav::before{
+.btn-border-pop-nav::before {
     content: '';
+    color: white;
     position: absolute;
     top: 7%;
     left: 2%;
@@ -72,13 +89,30 @@ header{
     bottom: 7%;
     z-index: 1;
     border-radius: 20px;
+    transition: all .5s linear;
     display: none;
     border: 2px solid white;
 }
-.ms_btn_nav.btn-border-pop-nav:hover::before{
+.ms_btn_nav.btn-border-pop-nav:hover::before,
+.ms_btn.btn-border-pop:hover::before{
     display: block;
 }
+/* dropdown */
+.ms_dropdown-menu{
+    border: 1px solid white;
+    border-radius: 0px;
+}
+.play-menu:hover{ 
+    box-shadow: 0 3px 7px gray;
+    
+}
+.dropdown-item:hover{
+    color: rgb(70, 70, 228);
+    background-color: white;
 
+}
+
+/* Jumbo */
 
 .jumbo{
     margin-top: 116px;
@@ -125,42 +159,79 @@ header{
     border: 2px solid black;
 }
 
-
-.ms_btn.btn-border-pop:hover::before{
-    display: block;   
-
-}
-.first_game{
-    position: relative;
-}
-
-
+/* games-under-jumbo */
 .photos_under_jumbo,
 #special_border{
     border-radius: 16px;
 }
 
-.part_under_jumbo{
-    margin-bottom: 70px;
+
+#special_border{
+    box-shadow: 0 0 0 4px white,
+                0 0 0 6px blue;
 }
 
-.container_photo{
+.container_photo:hover .photos_under_jumbo {
+    transform: translate(0, -10px);
+    
+}
+
+/* ecco la playstation */
+
+.accessories{
+    filter: opacity(.7);
+}
+.accessories:hover{
+    filter: opacity(1);
+}
+/* console Playstation */
+.ms_btn_nav.long{
+    width: 200px;
+}
+
+
+/* it takes two */
+.ms_backgroundPhotoMiddle{
+    background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 765px;
     position: relative;
 }
 
-#special_border{
+.takestwo-text-items{
     position: absolute;
+    top:9%;
     left: 4%;
-    top: -4%;
-    right: 4%;
-    bottom: -4%;
-    border: 3px solid rgb(46, 85, 212);
+}
+/* Ps-plus */
+
+.ps_plus_photo{
+    height: 100%;
+    object-fit: cover;
 }
 
-img{
-    object-fit: cover;
-    width: 100%;
+.esplora{
+    width: 200px;
+    background-color: lightgrey;
 }
-.container_photo:hover{
-    transform: translate(0, -10px);
+
+.esplora:hover{
+    box-shadow: 0 0 8px #e2dede;
 }
+
+/* playStation now */
+.background-darkBlue{
+    background-color: rgb(3, 3, 68);
+}
+
+footer{
+    background-color: rgb(30, 101, 207);
+}
+
+
+
+
+
+
+
