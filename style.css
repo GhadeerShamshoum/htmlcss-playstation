@@ -21,7 +21,6 @@ img{
 .ms_sony_logo{
     padding: 1rem;
     vertical-align: middle;
-    
 }
 
 .logo_ps_nav{
@@ -76,12 +75,11 @@ img{
     border-radius: 20px;
     transition: all .5s linear;
     --border-size:2px; 
-    background-color: gray;
+    background-color: black;
 }
 
 .btn-border-pop-nav::before {
     content: '';
-    color: white;
     position: absolute;
     top: 7%;
     left: 2%;
@@ -97,6 +95,13 @@ img{
 .ms_btn.btn-border-pop:hover::before{
     display: block;
 }
+.ms_btn_nav:hover{
+    background-color: gray;
+}
+.button-s{
+    width: 280px;
+    margin-left: 0;
+}
 /* dropdown */
 .ms_dropdown-menu{
     border: 1px solid white;
@@ -109,8 +114,8 @@ img{
 .dropdown-item:hover{
     color: rgb(70, 70, 228);
     background-color: white;
-
 }
+
 
 /* Jumbo */
 
