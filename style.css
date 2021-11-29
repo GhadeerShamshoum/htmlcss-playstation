@@ -3,9 +3,6 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-header{
-    height: 116px;
-}
 
 a{
     cursor: pointer;
@@ -19,25 +16,15 @@ img{
 
 /* nav-bar */
 .ms_sony_logo{
-    padding: 1rem;
     vertical-align: middle;
-}
-
-.logo_ps_nav{
-    width: 100%;
-}
-
-.ms_link_nav{
-    margin-bottom: 5px;
+    width: 100px;
 }
 
 .ms_link_nav img{
     width: 10px;
 }
 
-.ms_text_black{
-    color: black;
-}
+
 
 .arrow-hover-nav{
     display: none;
@@ -54,6 +41,9 @@ img{
 .ms_nav_list:hover .arrow-nav{
     display: none;
 }
+.ms_link_nav:hover span{
+    color: blue;
+}
 
 .list-minu{
     padding-left: 0;
@@ -63,41 +53,46 @@ img{
     color: blue;
 }
 
-.ms_btn_nav_blue{
-    background-color: rgb(55, 55, 230);
-}
+/* buttons */
+
 .ms_btn_nav{
-    position: relative;   
-    color: white;  
-    border: none;
-    height: 40px;
-    width: 105px;
-    border-radius: 20px;
-    transition: all .5s linear;
-    --border-size:2px; 
-    background-color: black;
+    border: 4px solid  rgb(29, 28, 28);
+    background-color: rgb(29, 28, 28);
+}
+.ms_btn_jumbo{
+    border: 4px solid  rgb(206, 42, 42);
+    background-color: rgb(206, 42, 42);
+
+}
+.ms_btn_nav,
+.ms_btn_jumbo,
+.ms_btn_console,
+.ms_btn_now{
+    padding: 5px 15px;
 }
 
-.btn-border-pop-nav::before {
-    content: '';
-    position: absolute;
-    top: 7%;
-    left: 2%;
-    right: 2%;
-    bottom: 7%;
-    z-index: 1;
-    border-radius: 20px;
-    transition: all .5s linear;
-    display: none;
-    border: 2px solid white;
+.ms_btn_nav:hover {
+    border-color: rgb(88, 86, 86);
+    box-shadow: inset 0 0 0 2px #fff;
+    transition: .3 ease-in-out;
+    background-color: rgb(88, 86, 86);
 }
-.ms_btn_nav.btn-border-pop-nav:hover::before,
-.ms_btn.btn-border-pop:hover::before{
-    display: block;
+
+.ms_btn_jumbo:hover{
+    box-shadow: inset 0 0 0 2px rgb(2, 2, 2);
+    transition: .3 ease-in-out;
 }
-.ms_btn_nav:hover{
-    background-color: gray;
+.ms_btn_console{
+    border: 4px solid  rgb(29, 5, 250);
+    background-color:  rgb(29, 5, 250);
 }
+.ms_btn_console:hover{
+    border-color:  rgb(29, 5, 250);
+    box-shadow: inset 0 0 0 2px #fff;
+    transition: .3 ease-in-out;
+    background-color:  rgb(29, 5, 250);
+}
+
 .button-s{
     width: 280px;
     margin-left: 0;
@@ -127,41 +122,11 @@ img{
     background-image: url(img/jumbo-bg.png);
     background-size: cover;
     background-position: center;
-    height: 600px;
-    position: relative;
+    height: 559px;
 }
 
 .jumbo-text-items{
-    position: absolute;
-    top: 41%;
-    left: 7%;
-}
-
-.jumbo_items{
-    padding: 6px 0;
-}
-.ms_btn{
-    position: relative;   
-    color: white;  
-    border: none;
-    height: 40px;
-    width: 105px;
-    border-radius: 20px;
-    transition: all .5s linear;
-    --border-size:2px;
-    background-color: crimson; 
-}
-.btn-border-pop::before{
-    content: '';
-    position: absolute;
-    top: 7%;
-    left: 2%;
-    right: 2%;
-    bottom: 7%;
-    z-index: 1;
-    border-radius: 20px;
-    display: none;
-    border: 2px solid black;
+    margin-top: 200px;
 }
 
 /* games-under-jumbo */
@@ -171,13 +136,9 @@ img{
 }
 
 
-#special_border{
-    box-shadow: 0 0 0 4px white,
-                0 0 0 6px blue;
-}
-
 .container_photo:hover .photos_under_jumbo {
     transform: translate(0, -10px);
+    transition: all .2s linear;
     
 }
 
@@ -185,12 +146,15 @@ img{
 
 .accessories{
     filter: opacity(.7);
+    transition: all .2s linear;
 }
 .accessories:hover{
     filter: opacity(1);
 }
 /* console Playstation */
-.ms_btn_nav.long{
+.ms_btn_console.long,
+.shiny_btn.long,
+.ms_btn_now.long{
     width: 200px;
 }
 
@@ -200,34 +164,52 @@ img{
     background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
     background-position: center;
     background-size: cover;
-    height: 765px;
-    position: relative;
+    height: 706px;
 }
 
 .takestwo-text-items{
-    position: absolute;
-    top:9%;
-    left: 4%;
+    margin-top: 57px;
 }
 /* Ps-plus */
 
 .ps_plus_photo{
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;    
 }
-
-.esplora{
-    width: 200px;
-    background-color: lightgrey;
-}
-
-.esplora:hover{
+.shiny_btn:hover{
     box-shadow: 0 0 8px #e2dede;
+}
+
+#special_border{
+    box-shadow: 0 0 0 4px white,
+                0 0 0 6px blue;
+}
+
+/* esplora */
+
+.esplora_text_container{
+    height: 128px;
 }
 
 /* playStation now */
 .background-darkBlue{
     background-color: rgb(3, 3, 68);
+}
+
+.ms_btn_now:hover{
+   
+    box-shadow: inset 0 0 0 2px rgb(8, 5, 53);
+    transition: .3 ease-in-out;
+}
+.ms_btn_now{
+    border: 4px solid  rgb(231, 231, 236);
+    background-color:  rgb(231, 231, 236);
+}
+.ms_btn_now:hover{
+    border-color:  rgb(231, 231, 236);
+    box-shadow: inset 0 0 0 2px rgb(18, 5, 77);
+    transition: .3 ease-in-out;
+    background-color:  rgb(231, 231, 236);
 }
 
 footer{
