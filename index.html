@@ -6,26 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- heeader -->
-<header class="fixed-top">
+<header class="fixed-top bg-dark">
 <!-- header-top -->
-        <div class="container-fluid bg-dark">
-            <div class="row d-flex justify-content-end">
-                <div  class="col-3 col-md-2 col-lg-1 ms_sony_logo">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-end py-3">
+                <div  class="ms_sony_logo">
                     <img src="img/sony_logo.svg" alt="">
-
                 </div>
-
             </div>
 
         </div>
 <!-- nav-bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
-            <div class="container-fluid">
+            <div class="container-fluid"> 
               <!-- logo-nav -->
               <a class="navbar-brand" href="#">
                   <img src="img/play_logo.svg" alt="">
@@ -37,8 +35,8 @@
                 <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
                 <!-- Giochi -->
                   <li class="nav-item dropdown me-3 py-2 position-static">
-                    <a class="ms_link_nav  text-decoration-none ms_text_black ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>Giochi</span>
+                    <a class="active ms_link_nav  text-decoration-none text-dark ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fw-bold">Giochi</span>
                         <span class="arrow-nav"><img src="img/chevron-down-solid.svg" alt=""></span>
                         <span class="arrow-hover-nav"><img src="img/chevron-down-solid-hover.svg" alt=""></span>
                     </a>
@@ -68,8 +66,8 @@
                   </li>
                 <!-- Hardware -->
                   <li class="nav-item py-2 me-3">
-                    <a class="ms_link_nav text-decoration-none ms_text_black ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>Hardware</span>
+                    <a class="ms_link_nav text-decoration-none text-dark ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fw-bold">Hardware</span>
                         <span class="arrow-nav"><img src="img/chevron-down-solid.svg" alt=""></span>
                         <span class="arrow-hover-nav"><img src="img/chevron-down-solid-hover.svg" alt=""></span>
                     </a>
@@ -99,8 +97,8 @@
                   </li>
                 <!-- Servizi -->
                   <li class="nav-item py-2 me-3">
-                    <a class="ms_link_nav text-decoration-none ms_text_black ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>Servizi</span>
+                    <a class="ms_link_nav text-decoration-none text-dark ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fw-bold">Servizi</span>
                         <span class="arrow-nav"><img src="img/chevron-down-solid.svg" alt=""></span>
                         <span class="arrow-hover-nav"><img src="img/chevron-down-solid-hover.svg" alt=""></span>
                     </a>
@@ -131,8 +129,8 @@
                   </li>
                 <!-- Novità -->
                   <li class="nav-item py-2 me-3">
-                    <a class="ms_link_nav text-decoration-none ms_text_black ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>Novità</span>
+                    <a class="ms_link_nav text-decoration-none text-dark ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fw-bold">Novità</span>
                         <span class="arrow-nav"><img src="img/chevron-down-solid.svg" alt=""></span>
                         <span class="arrow-hover-nav"><img src="img/chevron-down-solid-hover.svg" alt=""></span>
                     </a>
@@ -162,8 +160,8 @@
                   </li>
                 <!-- Fai acquisti -->
                   <li class="nav-item py-2  me-3">
-                    <a class="ms_link_nav text-decoration-none ms_text_black ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>Fai acquisti</span>
+                    <a class="ms_link_nav text-decoration-none text-dark ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fw-bold">Fai acquisti</span>
                         <span class="arrow-nav"><img src="img/chevron-down-solid.svg" alt=""></span>
                         <span class="arrow-hover-nav"><img src="img/chevron-down-solid-hover.svg" alt=""></span>
                     </a>
@@ -193,8 +191,8 @@
                   </li>
                 <!-- Supporto -->
                   <li class="nav-item py-2 me-3">
-                    <a class="ms_link_nav text-decoration-none ms_text_black ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>Supporto</span>
+                    <a class="ms_link_nav text-decoration-none text-dark ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fw-bold">Supporto</span>
                         <span class="arrow-nav"><img src="img/chevron-down-solid.svg" alt=""></span>
                         <span class="arrow-hover-nav"><img src="img/chevron-down-solid-hover.svg" alt=""></span>
                     </a>
@@ -222,14 +220,14 @@
                       </ul>
                     </ul>
                   </li>
-                 
                 </ul>
+
                 <div class="d-flex">
                 <!-- My PlayStation -->
                 <ul class="col-12 navbar-nav mb-2 mb-lg-0">
                   <li class="nav-item py-2 me-3 list-unstyled">
-                      <a class="ms_link_nav text-decoration-none ms_text_black ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="my_playstation">My PlayStation</span>
+                      <a class="ms_link_nav text-decoration-none text-dark ms_nav_list" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="my_playstation fw-bold">My PlayStation</span>
                           <span class="arrow-nav"><img src="img/chevron-down-solid.svg" alt=""></span>
                           <span class="arrow-hover-nav"><img src="img/chevron-down-solid-hover.svg" alt=""></span>
                       </a>
@@ -249,40 +247,39 @@
                         </a>
                       </li>
                       </ul>
-                    </li>
-                    <!-- accedi -->
-                    <ul class="px-0 px-lg-3">
-                      <li class="nav-item py-2 me-3 list-unstyled">
-                        <button class="button-s ms_btn_nav btn-border-pop-nav me-5 d-lg-none">Accedi</button>
-                        <button class=" ms_btn_nav btn-border-pop-nav me-5 d-none d-lg-block">Accedi</button>
-                      </li>
-                    </ul>
+                  </li>
+                <!-- accedi -->
+                <ul class="px-0">
+                  <li class="nav-item py-2 me-1 list-unstyled">
+                    <button class="button-s ms_btn_nav rounded-pill d-lg-none"><a class="text-white" href="#">Accedi</a></button>
+                    <button class=" ms_btn_nav rounded-pill me-5 d-none d-lg-block"><a class="text-white" href="#">Accedi</a></button>
+                  </li>
+                </ul>
+                  <!-- search -->
                   <li class="nav-item py-2 me-3 list-unstyled d-none d-lg-block">
                      <a href="#">
-                        <i class="bi bi-search ms_text_black py-2"></i>
+                        <i class="bi bi-search text-dark py-2"></i>
                       </a>
                   </li>
-                  <div class="col-11 d-lg-none border border-secondary px-3">
+                  <li class="col-11 d-lg-none list-unstyled border border-secondary px-3">
                     <i class="bi bi-search"></i>
-                    <input class="border-0 col-11" type="search">
-                  </div>
+                    <input class="border-0 py-2 col-11" type="search">
+                  </li>
                 </ul>
-
-                  
-                    </div>
               </div>
             </div>
+            
           </nav> 
         </header>
 <!-- jumbo  -->
-    <section class="jumbo">
-        <div class="container-fluid ms_backgroundPhotoTop">
+    <section class="jumbo ms_backgroundPhotoTop">
+        <div class="container">
             <div class="row">
-                <div class="col-10 jumbo-text-items text-white">
-                    <img class="col-6 jumbo_items" src="img/returnal-hero-banner-logo.png" alt="">
-                    <h1 class="col-6 jumbo_items">Rompi il cerchio</h1>
-                    <h6 class="col-12 jumbo_items">Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclussiva su PS5</h6>
-                    <button class="ms_btn btn-border-pop p-1">Acquista ora</button>
+                <div class="col-12 col-lg-5 jumbo-text-items text-white">
+                    <img class="col-7 py-3" src="img/returnal-hero-banner-logo.png" alt="">
+                    <h1 class="col-9  py-3">Rompi il cerchio</h1>
+                    <h6 class="col-12 col-lg-9 py-3">Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclussiva su PS5.</h6>
+                    <button class="ms_btn_jumbo rounded-pill p-2"><a class="text-white" href="#">Acquista ora</a></button>
                 </div>
             </div>
         </div>
@@ -347,7 +344,7 @@
           <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
             <h1>Console PlayStation 5</h1>
             <div>Sperimenta la nuova generazione di incredibili giochi PlayStation</div>
-            <button class="ms_btn_nav long btn-border-pop-nav bg-primary p-1 my-5">Maggiori informazioni</button>
+            <button class="ms_btn_console long rounded-pill p-1 my-5"><a class="text-white" href="#">Maggiori informazioni</a></button>
           </div>
           <div class="col-12 col-md-6">
             <img src="img/playstation-5-thumb.png" alt="">
@@ -385,15 +382,14 @@
         
       </div>
 <!-- it takes two -->
-
-      <section>
-        <div class="container-fluid ms_backgroundPhotoMiddle">
+      <section class="ms_backgroundPhotoMiddle">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 takestwo-text-items text-white">
-                  <img class="col-7 col-md-4 mb-4" src="img/it-takes-two-logo.png" alt="" srcset="">
-                  <h1 class="col-12 col-md-6 text-white py-4 mb-4"> Un'avventura cooperativa selvaggio ti attende</h1>
-                  <h6 class="col-12 col-md-6 jumbo_items mb-4">Trova un amico e partite insieme per l'avventura più follo delle vostre vite in it Takes Two, un giocco d'avventura cooperativa a piattaforme che stravolge il suo genere.</h6>
-                  <button class="ms_btn btn-border-pop p-1">Acquista ora</button>
+                <div class="col-12 col-lg-8 takestwo-text-items text-white">
+                  <img class="col-7 col-lg-3 mb-4" src="img/it-takes-two-logo.png" alt="" srcset="">
+                  <h1 class="col-12 col-lg-5 text-white py-4 mb-4"> Un'avventura- cooperativa selvaggio ti attende</h1>
+                  <h6 class="col-12 col-lg-5 jumbo_items mb-4">Trova un amico e partite insieme per l'avventura più follo delle vostre vite in it Takes Two, un giocco d'avventura cooperativa a piattaforme che stravolge il suo genere.</h6>
+                  <button class="ms_btn_jumbo rounded-pill p-2"><a class="text-white" href="#">Acquista ora</a></button>
                 </div>
             </div>
         </div>
@@ -478,36 +474,42 @@
           <div class="row row-cols-1 row-cols-md-3 my-5">
             <div>
               <img src="img/ps4-slim-homepage-image-block.jpg" alt="">
-              <h1>PlayStation 4</h1>
-              <div>Giochi incredibili live su PS4, con 1 TB di spazio di archiviazione</div>
-              <button class="ms_btn_nav btn-border-pop-nav bg-primary p-1 my-4">Scopri di più</button>
+              <div class="esplora_text_container">
+                <h1>PlayStation 4</h1>
+                <div>Giochi incredibili live su PS4, con 1 TB di spazio di archiviazione</div>
+              </div>
+              <button class="ms_btn_console rounded-pill p-2 my-4"><a class="text-white" href="#">Scopri di più</a></button>
             </div>
             <div>
               <img src="img/double11-202010-tw-psvr.jpg" alt="">
-              <h1>PlayStation VR</h1>
-              <div>Oltre 500 titoli ed esperienze di gioco. <br> Scoprili tutti.</div>
-              <button class="ms_btn_nav btn-border-pop-nav bg-primary p-1 my-4">Scopri di più</button>
+              <div class="esplora_text_container">
+                <h1>PlayStation VR</h1>
+                <div>Oltre 500 titoli ed esperienze di gioco. Scoprili tutti.</div>
+              </div>
+              <button class="ms_btn_console rounded-pill p-2 my-4"><a class="text-white" href="#">Scopri di più</a></button>
             </div>
             <div>
               <img src="img//dualshock-4-listing-thumb.jpg" alt="">
-              <h1>Accesssori</h1>
-              <div>Migliore la lua esperienza PS4 con una gamma di accessori ufficiali</div>
-              <button class="ms_btn_nav btn-border-pop-nav bg-primary p-1 my-4">Scopri di più</button>
+              <div class="esplora_text_container">
+                <h1>Accesssori</h1>
+                <div>Migliore la lua esperienza PS4 con una gamma di accessori ufficiali</div>
+              </div>
+              <button class="ms_btn_console rounded-pill  p-2 my-4"><a class="text-white" href="#"> Scopri di più</a></button>
             </div>
           </div>
         </div>  
       </section>
 <!-- PlayStation Plus -->
-      <section class="bg-secondary bg-gradient ">
-        <div class="container-fluid ps-plus">
+      <section class="ps-plus bg-secondary bg-gradient">
+        <div class="container">
           <div class="row">
-            <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
-              <img class="col-8" src="img/ps-plus-logo.png" alt="">
+            <div class="col-12 col-md-5 d-flex justify-content-center flex-column py-3">
+              <img class="col-10" src="img/ps-plus-logo.png" alt="">
               <h5 class="col-12 my-5">Migliora la tua esperienza PlayStaion con l'accesso a multigiocatore online, giochi mensili, sconti esclusivi</h5>
-              <button class="col-4 esplora border-0 rounded-pill p-2"><a class="text-decoration-none" href="#">Esplora PlayStation Plus</a></button>
+              <button class="col-4 shiny_btn long border-0 rounded-pill p-2"><a class="text-decoration-none" href="#">Esplora PlayStation Plus</a></button>
             </div>
-            <div class="col-md-6  d-none d-md-block">
-              <img class="ps_plus_photo col-11 " src="img/ps-plus-april-monthly-games-featured-image-block.png" alt="">
+            <div class="col-md-7 d-none d-md-block px-0">
+              <img class="ps_plus_photo col-12 " src="img/ps-plus-april-monthly-games-featured-image-block.png" alt="">
             </div>
           </div>
         </div>
@@ -540,15 +542,15 @@
   
 <!-- PlayStation Now -->
       <section class="background-darkBlue py-5">
-        <div class="container-fluid ps-plus">
+        <div class="container ps-plus">
           <div class="row">
             <div class="col-12 col-md-5 d-flex justify-content-center flex-column">
               <img class="col-8" src="img/ps-now-logo-two-column.png" alt="">
               <div class="col-12 my-5 text-white">Ottieni l'accesso immedialo a una vastissima raccolta di oltre 800 giocchi per PS4, PS3 e PS2 su PC Windows, con nuovi titoli aggiunti ogni mese.</div>
-              <button class="col-4 esplora border-0 rounded-pill p-2"><a class="text-decoration-none text-dark" href="#">Esplora PlayStation Plus</a></button>
+              <button class="ms_btn_now long rounded-pill p-1 my-2"><a class="text-decoration-none text-dark" href="#">Esplora PlayStation Plus</a></button>
             </div>
             <div class="col-md-7  d-none d-md-block">
-              <img class="ps_plus_photo col-10" src="img/ps-now-april-featured-image-block.png" alt="">
+              <img class="ps_plus_photo col-12" src="img/ps-now-april-featured-image-block.png" alt="">
             </div>
           </div>
         </div>
@@ -560,7 +562,7 @@
           <div class="row text-center">
               <h3 class="my-5">Seguici sui social media</h3>
           </div>
-          <div class="row row-cols-4 row-cols-sm-2 row-cols-md-4 col-md-6 m-auto g-2 mb-5 ">
+          <div class="row row-cols-2 row-cols-sm-4 row-cols-md-4 col-md-6 m-auto g-2 mb-5 ">
             <a class="col" href="#">
               <img class="social-media" src="img/twitter.jpg" alt="">
             </a>
