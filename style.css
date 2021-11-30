@@ -20,11 +20,10 @@ img{
     width: 100px;
 }
 
+
 .ms_link_nav img{
     width: 10px;
 }
-
-
 
 .arrow-hover-nav{
     display: none;
@@ -38,12 +37,15 @@ img{
 .ms_nav_list:hover .arrow-hover-nav{
     display: inline-block;
 }
+
 .ms_nav_list:hover .arrow-nav{
     display: none;
 }
+
 .ms_link_nav:hover span{
     color: blue;
 }
+
 
 .list-minu{
     padding-left: 0;
@@ -123,7 +125,30 @@ img{
     background-size: cover;
     background-position: center;
     height: 559px;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes animate {
+    0%{
+        background-image: url(img/sifu.jpg);
+    }
+    50%{
+        background-image: url(img/crash.jpg);
+    }
+    100%{
+        background-image:  url(img/jumbo-bg.png) ;
+
+    }  
+}
+
 
 .jumbo-text-items{
     margin-top: 200px;
